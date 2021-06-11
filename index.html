@@ -527,7 +527,7 @@ new Vue({
         alert('资源下载中，请稍后')
         return
       } else if (
-        location.href.indexOf('raw.githubusercontent.com') > -1 // 在下载页面才触发，代码注入的页面不需要校验
+        location.href.indexOf('blog.luckly-mjw.cn') > -1 // 在下载页面才触发，代码注入的页面不需要校验
         && this.url.indexOf(location.protocol) === -1  // 当前协议不一致，切换协议
       ) {
         alert('当前协议不一致，跳转至正确页面重新下载')
